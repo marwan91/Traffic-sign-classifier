@@ -78,14 +78,19 @@ My final model consisted of the following layers:
 | Layer         		|     Description	        					| 
 |:---------------------:|:---------------------------------------------:| 
 | Input         		| 32x32x3 RGB image   							| 
-| Convolution 3x3     	| 1x1 stride, same padding, outputs 32x32x64 	|
+| Convolution 5x5     	| 1x1 stride, valid padding, outputs 25x25x9 	|
 | RELU					|												|
-| Max pooling	      	| 2x2 stride,  outputs 16x16x64 				|
-| Convolution 3x3	    | etc.      									|
-| Fully connected		| etc.        									|
-| Softmax				| etc.        									|
-|						|												|
-|						|												|
+| Max pooling	  2x2  	| 2x2 stride,  outputs 11x11x9 				|
+| Convolution 5x5	    |  1x1 stride, valid padding, outputs 7x7x16 							|
+| RELU					|												|
+| Max pooling	  2x2  	| 2x2 stride,  outputs 4x4x16 				|
+| flatten 	| convert 3d tensor to 1d tensor				|
+| Fully connected		|    outputs 120     									|
+|RELU				|        									|
+| Fully connected		|        outputs 84  									|
+|RELU				|        									|
+| Fully connected		|          outputs 43									|
+
  
 
 
