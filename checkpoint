@@ -1,0 +1,2 @@
+model_checkpoint_path: "mysession"
+all_model_checkpoint_paths: "mysession"
