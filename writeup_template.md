@@ -142,18 +142,26 @@ The model was able to correctly guess 4 of the 5 traffic signs, which gives an a
 
 The code for making predictions on my final model is located in the 11th cell of the Ipython notebook.
 
-For the first image, the model is relatively sure that this is a stop sign (probability of 0.6), and the image does contain a stop sign. The top five soft max probabilities were
+For the first image, the model is relatively sure that this is a 'Speed limit (30km/h)' sign (probability of 0.6), and the image does contain a 'Speed limit (30km/h)' sign. The top five soft max probabilities were
 
 | Probability         	|     Prediction	        					| 
 |:---------------------:|:---------------------------------------------:| 
-| .60         			| Stop sign   									| 
-| .20     				| U-turn 										|
-| .05					| Yield											|
-| .04	      			| Bumpy Road					 				|
-| .01				    | Slippery Road      							|
+| 0.99         			|Speed limit (30km/h)  									| 
+| 0.00006     				|Speed limit (20km/h)										|
+| 0.000003					|Speed limit (80km/h)										|
+|0.0000004     			|Speed limit (70km/h)					 				|
+| 0.0000001				    | Speed limit (50km/h)     							|
 
 
-For the second image ... 
+For the second image , the model is relatively sure that this is a 'Speed limit (30km/h)' sign (probability of 0.6), and the image does contain a 'Speed limit (30km/h)' sign. The top five soft max probabilities were
+
+| Probability         	|     Prediction	        					| 
+|:---------------------:|:---------------------------------------------:| 
+| 0.99         			|Speed limit (30km/h)  									| 
+| 0.00006     				|Speed limit (20km/h)										|
+| 0.000003					|Speed limit (80km/h)										|
+|0.0000004     			|Speed limit (70km/h)					 				|
+| 0.0000001				    | Speed limit (50km/h)     							|
 
 ### (Optional) Visualizing the Neural Network (See Step 4 of the Ipython notebook for more details)
 #### 1. Discuss the visual output of your trained network's feature maps. What characteristics did the neural network use to make classifications?
