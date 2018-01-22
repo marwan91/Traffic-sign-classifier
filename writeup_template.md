@@ -136,7 +136,7 @@ Here are the results of the prediction:
 | Keep right			| Keep right  							|
 
 
-The model was able to correctly guess 4 of the 5 traffic signs, which gives an accuracy of 80%. This compares favorably to the accuracy on the test set of ...
+The model was able to correctly guess 5 of the 5 traffic signs, which gives an accuracy of 100%.
 
 #### 3. Describe how certain the model is when predicting on each of the five new images by looking at the softmax probabilities for each prediction. Provide the top 5 softmax probabilities for each image along with the sign type of each probability. (OPTIONAL: as described in the "Stand Out Suggestions" part of the rubric, visualizations can also be provided such as bar charts)
 
@@ -183,12 +183,12 @@ The top five soft max probabilities were
 |:---------------------:|:---------------------------------------------:| 
 | 0.999       			|Ahead only					| 
 | 0.0000002   				|Roundabout mandatory							|
-|0.00000008				Go straight or right								|
+|0.00000008		|	Go straight or right								|
 |0.000000001  			|Turn right ahead 				|
 |0.00000000002	    |Turn left ahead 		|
 
 
-For the fifth image , the model is relatively sure that this is a 'Keep right' sign (probability of 0.982), and the image does contain a 'Keep right' sign. The top five soft max probabilities were
+For the fifth image , the model is relatively sure that this is a 'Keep right' sign (probability of 0.999), and the image does contain a 'Keep right' sign. The top five soft max probabilities were
 
 | Probability         	|     Prediction	        					| 
 |:---------------------:|:---------------------------------------------:| 
