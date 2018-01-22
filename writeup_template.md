@@ -96,7 +96,10 @@ My final model consisted of the following layers:
 
 #### 3. Describe how you trained your model. The discussion can include the type of optimizer, the batch size, number of epochs and any hyperparameters such as learning rate.
 
-To train the model, I used an ....
+To train the model, I used the AdamOptimizer from the tensoflow library. I chose a learning rate of 0.001 as it is not too large to cause fluctuations in the validation accuracy, and also not too small to make the learning process slow, though , when the validation accuracy reaches 90% or above , it starts to fluctuate. A possible solution for this problem is a decaying learning rate. but in this project I used a constant rate.
+
+The number of epochs for the training process is 12 which was the minimum to reach a suffiicient learning validation accuracy.
+I went for a relatively small batch size as I found that it makes the training process significantly faster.
 
 #### 4. Describe the approach taken for finding a solution and getting the validation set accuracy to be at least 0.93. Include in the discussion the results on the training, validation and test sets and where in the code these were calculated. Your approach may have been an iterative process, in which case, outline the steps you took to get to the final solution and why you chose those steps. Perhaps your solution involved an already well known implementation or architecture. In this case, discuss why you think the architecture is suitable for the current problem.
 
