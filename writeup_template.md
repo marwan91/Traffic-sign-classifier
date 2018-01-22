@@ -9,7 +9,7 @@
 **Build a Traffic Sign Recognition Project**
 
 The goals / steps of this project are the following:
-* Load the data set (see below for links to the project data set)
+* Load the data set (see below for links to the project data set
 * Explore, summarize and visualize the data set
 * Design, train and test a model architecture
 * Use the model to make predictions on new images
@@ -142,28 +142,59 @@ The model was able to correctly guess 4 of the 5 traffic signs, which gives an a
 
 The code for making predictions on my final model is located in the 11th cell of the Ipython notebook.
 
-For the first image, the model is relatively sure that this is a 'Speed limit (30km/h)' sign (probability of 0.6), and the image does contain a 'Speed limit (30km/h)' sign. The top five soft max probabilities were
+For the first image, the model is relatively sure that this is a 'Speed limit (30km/h)' sign (probability of 0.99), and the image does contain a 'Speed limit (30km/h)' sign. The top five soft max probabilities were
 
 | Probability         	|     Prediction	        					| 
 |:---------------------:|:---------------------------------------------:| 
-| 0.99         			|Speed limit (30km/h)  									| 
+| 0.999        			|Speed limit (30km/h)  									| 
 | 0.00006     				|Speed limit (20km/h)										|
 | 0.000003					|Speed limit (80km/h)										|
 |0.0000004     			|Speed limit (70km/h)					 				|
 | 0.0000001				    | Speed limit (50km/h)     							|
 
 
-For the second image , the model is relatively sure that this is a 'Speed limit (30km/h)' sign (probability of 0.6), and the image does contain a 'Speed limit (30km/h)' sign. The top five soft max probabilities were
+For the second image , the model is relatively sure that this is a 'Speed limit (60km/h)' sign (probability of 0.982), and the image does contain a 'Speed limit (30km/h)' sign. The top five soft max probabilities were
 
 | Probability         	|     Prediction	        					| 
 |:---------------------:|:---------------------------------------------:| 
-| 0.99         			|Speed limit (30km/h)  									| 
-| 0.00006     				|Speed limit (20km/h)										|
-| 0.000003					|Speed limit (80km/h)										|
-|0.0000004     			|Speed limit (70km/h)					 				|
-| 0.0000001				    | Speed limit (50km/h)     							|
+| 0.982         			|Speed limit (60km/h)  									| 
+| 0.017    				|Speed limit (50km/h)										|
+| 0.0000007				|Speed limit (80km/h)										|
+|0.00000001   			|Wild animals crossing				 				|
+|0.000000001				    |Dangerous curve to the left    							|
 
-### (Optional) Visualizing the Neural Network (See Step 4 of the Ipython notebook for more details)
-#### 1. Discuss the visual output of your trained network's feature maps. What characteristics did the neural network use to make classifications?
+For the third image , the model is relatively sure that this is a 'Right-of-way at the next intersection
+' sign (probability of 0.985), and the image does contain a 'Right-of-way at the next intersection
+' sign. The top five soft max probabilities were
 
+| Probability         	|     Prediction	        					| 
+|:---------------------:|:---------------------------------------------:| 
+| 0.985       			|Right-of-way at the next intersection  									| 
+| 0.011   				|Beware of ice/snow									|
+| 0.002				|Pedestrians										|
+|0.00009   			|General caution			 				|
+|0.0000005		    |Dangerous curve to the right  		|
+
+For the fourth image , the model is relatively sure that this is a 'Ahead only' 
+sign (probability of 0.999), and the image does contain a 'Ahead only' sign. 
+The top five soft max probabilities were
+
+| Probability         	|     Prediction	        					| 
+|:---------------------:|:---------------------------------------------:| 
+| 0.999       			|Ahead only					| 
+| 0.0000002   				|Roundabout mandatory							|
+|0.00000008				Go straight or right								|
+|0.000000001  			|Turn right ahead 				|
+|0.00000000002	    |Turn left ahead 		|
+
+
+For the fifth image , the model is relatively sure that this is a 'Keep right' sign (probability of 0.982), and the image does contain a 'Keep right' sign. The top five soft max probabilities were
+
+| Probability         	|     Prediction	        					| 
+|:---------------------:|:---------------------------------------------:| 
+| 0.999       			|Keep right  									| 
+| 0.0000002    				|Roundabout mandatory									|
+| 0.00000000008		|Go straight or right									|
+|0.00000000005  			|Turn left ahead	 				|
+|0.00000000001			    |Priority road   							|
 
